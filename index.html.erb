@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+    body {
+      width: 960px;
+      margin: 100px auto;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+    }
+    .btn {
+      border: none;
+      font-size: 1rem;
+      padding: 7px;
+      color: white;
+      border-radius: 3px;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    #nice {
+      background : 	teal;
+    }
+    #false {
+      background: #DC143C;
+    }
+    </style>
+  </head>
+  <body>
+    <h1> Goya information</h1>
+    Press buttons below to show goya information in different formats.<br><br>
+    <div style="display:flex; justify-content: center;">
+      <form action="nice.cgi" method="POST" style="margin-right:20px;">
+      <input type="submit" name="nice" value="Nice Format" id="nice" class="btn">
+      </form>
+      <form action="poor.cgi" method="POST">
+        <input type="submit" name="false" value="Poor Format" id="false" class="btn">
+      </form>
+    </div>
+  </body>
+</html>
